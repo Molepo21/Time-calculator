@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Duration Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+  <h1>Time Duration Calculator</h1>
+
+  <form class="input-form" id="duration-form">
+    <div class="container1">
+      <h2>Start Date</h2>
+
+      <label for="start-year">Year:</label>
+      <input type="number" class="input-field" id="start-year" name="start-year" min="1900" max="2100" required>
+
+      <label for="start-month">Month:</label>
+      <input type="number" class="input-field" id="start-month" name="start-month" min="1" max="12" required>
+      
+      <label for="start-day">Day:</label>
+      <input type="number" class="input-field" id="start-day" name="start-day" min="1" max="31" required>
+      
+      <label for="start-hour">Hour:</label>
+      <input type="number" class="input-field" id="start-hour" name="start-hour" min="0" max="23" required>
+
+      <label for="start-minute">Minute:</label>
+      <input type="number" class="input-field" id="start-minute" name="start-minute" min="0" max="59" required>
+
+      <label for="start-second">Second:</label>
+      <input type="number" class="input-field" id="start-second" name="start-second" min="0" max="59" required><br><br><br>
+    </div>
+
+    <div class="container2">
+      <h2>End Date</h2>
+
+      <label for="end-year">Year:</label>
+      <input type="number" class="input-field" id="end-year" name="end-year" min="1900" max="2100" required>
+
+      <label for="end-month">Month:</label>
+      <input type="number" class="input-field" id="end-month" name="end-month" min="1" max="12" required>
+
+      <label for="end-day">Day:</label>
+      <input type="number" class="input-field" id="end-day" name="end-day" min="1" max="31" required>
+
+      <label for="end-hour">Hour:</label>
+      <input type="number" class="input-field" id="end-hour" name="end-hour" min="0" max="23" required>
+
+      <label for="end-minute">Minute:</label>
+      <input type="number" class="input-field" id="end-minute" name="end-minute" min="0" max="59" required>
+
+      <label for="end-second">Second:</label>
+      <input type="number" class="input-field" id="end-second" name="end-second" min="0" max="59" required><br>
+
+    <button class="btn" type="submit">Calculate Duration</button>
+      
+    </div>
+
+  </form>
+
+  <div class="result-div">
+    
+    <div class="result" id="result"></div>
+
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
